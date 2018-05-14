@@ -5,7 +5,7 @@ module testbench();
     wire y, yb;
     initial
     begin
-        $dumpfile("dff.vcd");
+        $dumpfile("latch.vcd");
         $dumpvars;  
         r = 1'b0;
         s = 1'b1;
