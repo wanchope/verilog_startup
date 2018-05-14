@@ -1,2 +1,2 @@
-# verilog_startup
+# verilog_study
 verilog learning and practices
