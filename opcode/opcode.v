@@ -1,9 +1,10 @@
-module opcode(d, op, a, b);
+module opcode(d, op, a, b, clk);
     output [31:0] d;
     reg [31:0] d;
     input [3:0] op;
     input [11:0] a, b;
-    always@(op or a or b)
+    input clk;
+    always@(posedge clk)
     begin
         case(op[3:0])
             4'b0000: d = a + b;
